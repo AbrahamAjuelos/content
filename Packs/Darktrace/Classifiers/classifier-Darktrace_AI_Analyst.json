@@ -1,9 +1,9 @@
 {
     "description": "",
     "feed": false,
-    "id": "010b5594-b142-49d2-8733-957073b8ee7f",
+    "id": "Darktrace AI Analyst",
     "mapping": {
-        "Darktrace AI Analyst": {
+        "Darktrace AI Analyst Event": {
             "dontMapEventToLabels": false,
             "internalMapping": {
                 "Darktrace AI Analyst Associated Devices": {
@@ -46,16 +46,17 @@
                     }
                 },
                 "Darktrace AI Analyst Related Model Breaches": {
-                    "complex": {
-                        "filters": [],
-                        "root": "modelBreaches",
-                        "transformers": [
-                            {
-                                "operator": "ConvertKeysToTableFieldFormat"
-                            }
-                        ]
-                    }
-                },
+					"complex": {
+						"accessor": "0",
+						"filters": [],
+						"root": "modelBreaches",
+						"transformers": [
+							{
+								"operator": "ConvertKeysToTableFieldFormat"
+							}
+						]
+					}
+				},
                 "Darktrace AI Analyst Score": {
                     "complex": {
                         "filters": [],
@@ -101,5 +102,5 @@
     "name": "Darktrace AI Analyst",
     "type": "mapping-incoming",
     "version": -1,
-    "fromVersion": "6.8.0"
+    "fromVersion": "6.6.0"
 }
